@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ExampleMesh />
+    <WordMesh />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import WordMesh from './components/WordMesh.vue';
+import ExampleMesh from './components/ExampleMesh.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    ExampleMesh,
+    WordMesh
   }
 }
 </script>
@@ -19,10 +21,5 @@ export default {
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
